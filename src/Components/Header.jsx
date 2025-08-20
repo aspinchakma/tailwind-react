@@ -6,7 +6,7 @@ const Header = () => {
     <nav className="nav_container flex items-center justify-between border-b-2 border-b-gray-200 py-4">
       <h2 className="text-3xl font-bold">Knowledge Cafe</h2>
       {/* Link Container */}
-      <div>
+      <div className="hidden lg:block">
         <Link className="nav_link lg:mx-2 mx-2" to="/">
           Home
         </Link>

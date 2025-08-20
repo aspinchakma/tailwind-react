@@ -1,3 +1,4 @@
+import BookMarksContainer from "../Components/BookMarksContainer";
 import Header from "../Components/Header";
 import Blogs from "./Blogs";
 
@@ -5,14 +6,14 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
-      <div className="grid lg:grid-cols-4 gap-5 mt-7">
-        <div className="col-span-3">
+      <main className="grid lg:grid-cols-4 gap-5 mt-7">
+        <div className="lg:col-span-3">
           <Blogs></Blogs>
         </div>
         <h2 className="border border-black">
-          Hello, this is reading component
+          <BookMarksContainer></BookMarksContainer>
         </h2>
-      </div>
+      </main>
     </div>
   );
 };
