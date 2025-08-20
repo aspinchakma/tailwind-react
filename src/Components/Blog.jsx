@@ -1,5 +1,6 @@
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const Blog = ({ blog }) => {
   const {
@@ -52,10 +53,15 @@ const Blog = ({ blog }) => {
             </span>
           ))}
         </p>
-        <p className="text-[#6047ec] underline cursor-pointer">Mark As Read</p>
-        <button className="border border-black py-1 px-4 mt-2 rounded-[4px] cursor-pointer">
+        <p className="text-[#6047ec] underline cursor-pointer mb-2">
+          Mark As Read
+        </p>
+        <Link
+          className="border border-black py-1 px-4  rounded-[4px] cursor-pointer"
+          to={`/blogDetails/${blog.id}`}
+        >
           Show Details
-        </button>
+        </Link>
       </div>
     </div>
   );

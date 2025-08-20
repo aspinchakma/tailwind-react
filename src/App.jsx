@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import BlogDetails from "./Components/BlogDetails";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
@@ -12,6 +13,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/notfound" element={<NotFound />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/blogDetails/:id" element={<BlogDetails />} />
       </Routes>
     </div>
   );
