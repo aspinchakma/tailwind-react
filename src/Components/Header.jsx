@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/contact">Contact</Link>
-      <Link to="/loging">Login</Link>
-      <Link to="/blogs">Blogs</Link>
+    <nav className="nav_container mt-1">
+      <Link className="nav_link lg:mx-2 mx-2" to="/">
+        Home
+      </Link>
+      <Link className="nav_link lg:mx-2 mx-2" to="/contact">
+        Contact
+      </Link>
+      <Link className="nav_link lg:mx-2 mx-2" to="/loging">
+        Login
+      </Link>
+      <Link className="nav_link lg:mx-2 mx-2" to="/blogs">
+        Blogs
+      </Link>
     </nav>
   );
 };

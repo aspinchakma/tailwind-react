@@ -7,7 +7,7 @@ import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
-    <>
+    <div className="lg:w-[80%] w-[90%] mx-auto">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
@@ -15,7 +15,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/blogs" element={<Blogs />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

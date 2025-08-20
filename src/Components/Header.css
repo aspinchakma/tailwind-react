@@ -1,0 +1,12 @@
+.nav_container {
+  text-align: center;
+}
+.nav_link {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  display: inline-block;
+}
