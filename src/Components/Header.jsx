@@ -10,12 +10,6 @@ const Header = () => {
       <Link className="nav_link lg:mx-2 mx-2" to="/contact">
         Contact
       </Link>
-      <Link className="nav_link lg:mx-2 mx-2" to="/loging">
-        Login
-      </Link>
-      <Link className="nav_link lg:mx-2 mx-2" to="/blogs">
-        Blogs
-      </Link>
     </nav>
   );
 };

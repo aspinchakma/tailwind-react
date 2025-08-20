@@ -1,10 +1,29 @@
-import Header from "../Components/Header";
+import { useEffect, useState } from "react";
 
 const Blogs = () => {
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const url = `https://aspinchakma.github.io/api-for-practice/knowledgeCafe.json`;
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error("Server Prolem");
+        }
+        const data = await response.json();
+        setBlogs(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    // calling function
+    loadData();
+  }, []);
   return (
     <div>
-      <Header></Header>
-      <h3>Blogs</h3>
+      {/* Blogs Container */}
+      <div></div>
     </div>
   );
 };
