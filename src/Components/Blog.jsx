@@ -1,3 +1,6 @@
+import { faBookmark } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Blog = ({ blog }) => {
   console.log(blog);
   const {
@@ -31,8 +34,14 @@ const Blog = ({ blog }) => {
                 <p className="text-[#707070]">{postedDate}</p>
               </div>
             </div>
-            <div>
-              <h4>0{readingTime} min read</h4>
+            <div className="flex gap-2">
+              <h4 className="text-[#707070]">0{readingTime} min read</h4>
+              <div>
+                <FontAwesomeIcon
+                  icon={faBookmark}
+                  className="w-6 text-[#707070] cursor-pointer"
+                />
+              </div>
             </div>
           </div>
         </div>
