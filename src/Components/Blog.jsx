@@ -2,7 +2,6 @@ import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Blog = ({ blog }) => {
-  console.log(blog);
   const {
     authorImage,
     authorName,
