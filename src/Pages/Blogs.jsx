@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Blog from "../Components/Blog";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -21,10 +22,14 @@ const Blogs = () => {
     loadData();
   }, []);
   return (
-    <div>
+    <>
       {/* Blogs Container */}
-      <div></div>
-    </div>
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
+        {blogs.map((blog, index) => (
+          <Blog key={index} blog={blog}></Blog>
+        ))}
+      </div>
+    </>
   );
 };
 
