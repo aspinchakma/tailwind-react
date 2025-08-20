@@ -1,12 +1,12 @@
 import Header from "../Components/Header";
 
-const Contact = () => {
+const Login = () => {
   return (
     <div>
       <Header></Header>
-      <h3>This is Contact Page</h3>
+      <h3>Please Login</h3>
     </div>
   );
 };
 
-export default Contact;
+export default Login;
