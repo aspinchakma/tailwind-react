@@ -10,7 +10,7 @@ const BookMarksContainer = ({ bookmars, spentTime }) => {
       ) : (
         ""
       )}
-      <BookMarks bookmars={bookmars}></BookMarks>
+      {bookmars.length ? <BookMarks bookmars={bookmars}></BookMarks> : ""}
     </div>
   );
 };
