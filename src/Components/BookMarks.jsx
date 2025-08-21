@@ -11,7 +11,7 @@ const BookMarks = ({ bookmars }) => {
       <div>
         {bookmars.map((blog, inx) => (
           <p className="bg-white p-3 rounded-[8px] mt-4" key={inx}>
-            {blog.title}
+            {blog}
           </p>
         ))}
       </div>

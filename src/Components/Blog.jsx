@@ -2,7 +2,7 @@ import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-const Blog = ({ blog, addBookMark }) => {
+const Blog = ({ blog, addBookMark, getTime }) => {
   const {
     authorImage,
     authorName,
@@ -54,7 +54,10 @@ const Blog = ({ blog, addBookMark }) => {
             </span>
           ))}
         </p>
-        <p className="text-[#6047ec] underline cursor-pointer mb-2">
+        <p
+          onClick={() => getTime(readingTime)}
+          className="text-[#6047ec] underline cursor-pointer mb-2"
+        >
           Mark As Read
         </p>
         <Link
