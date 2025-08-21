@@ -25,7 +25,7 @@ const BlogDetails = () => {
     <div>
       <Header />
       {/* Blog Details Container */}
-      <div className="mt-7">
+      <div className="mt-7 lg:w-[70%] mx-auto">
         <img className="w-full rounded-[10px]" src={blog?.coverPhoto} alt="" />
         <div className="flex justify-between items-center mt-3">
           <div className="flex items-center gap-5">

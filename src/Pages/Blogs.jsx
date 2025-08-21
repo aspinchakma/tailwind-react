@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Blog from "../Components/Blog";
 
-const Blogs = () => {
+const Blogs = ({ addBookMark }) => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     const loadData = async () => {
@@ -26,7 +26,7 @@ const Blogs = () => {
       {/* Blogs Container */}
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
         {blogs.map((blog, index) => (
-          <Blog key={index} blog={blog}></Blog>
+          <Blog key={index} addBookMark={addBookMark} blog={blog}></Blog>
         ))}
       </div>
     </>

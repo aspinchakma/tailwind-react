@@ -2,7 +2,7 @@ import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, addBookMark }) => {
   const {
     authorImage,
     authorName,
@@ -38,6 +38,7 @@ const Blog = ({ blog }) => {
               <h4 className="text-[#707070]">0{readingTime} min read</h4>
               <div>
                 <FontAwesomeIcon
+                  onClick={() => addBookMark(blog)}
                   icon={faBookmark}
                   className="w-6 text-[#707070] cursor-pointer"
                 />
